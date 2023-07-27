@@ -45,7 +45,7 @@ I would also suggest testing the security of all pages including the prevention 
 
 ## Test Cases
 
-**Login Page:**
+<details><summary><b>Login Test Cases</b></summary>
 
 - Validate login in with valid credentials.
 - Validate login in with invalid credentials.
@@ -75,8 +75,11 @@ Scenario: Validate login if the username contains invalid characters.
     When  I leave the username with invalid characters
     Then  I should see the "Enter" button disabled
 ```
+</details>
+<p></p>
 
-**Create post:**
+<details><summary><b>Create post Test Cases</b></summary>
+
 
 - Creating a new post by entering a title and content.
 - Verify if the user can see the new post in the list of posts.
@@ -84,8 +87,10 @@ Scenario: Validate login if the username contains invalid characters.
 - Validate user can read the body of a post.
 - Validate user cannot create a new post if they leave the title or body blank.
 - Verify that the user cannot create a new post if the title or body contains invalid characters.
+</details>
+<p></p>
 
-**Open delete alert:**
+<details><summary><b>Open delete alert Test Cases</b></summary>
 
 - **Test case Title:** Validate if a user can open a delete button for their own post.
     - **Description:** This test case have a intention of validade if the delete.
@@ -110,11 +115,19 @@ Scenario: Validate login if the username contains invalid characters.
         - Step 6 :  Click on confirm the deletion of their own post.
         - Step 7 : Validate if the post is delete.
     - **Expected results:** The delete button need to appear only on the user own post
+</details>
 
-**Open edit modal:**
+<p></p>
+<details><summary><b>Open edit modal Test Cases</b></summary>
+
 
 - Verify that the user can open an edit modal for their own post.
 - Verify that the user can edit the title and content of their own post.
 - Verify that the user cannot open an edit modal for a post that they did not create.
+
+</details>
+
+<p></p>
+<p></p>
 
 Create by [José Neto](https://www.linkedin.com/in/jdaneto/)
